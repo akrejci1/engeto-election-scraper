@@ -44,7 +44,7 @@ The resulting CSV file contains the following information for each municipality:
 
 ## Code Structure
 
-- `main.py` – main script that downloads, processes, and saves the data
+- `election_scraper.py` – main script that downloads, processes, and saves the data
 - Key functions:
   - `get_municipality_links_and_data` – retrieves links and names of all municipalities
   - `scrapuj_vysledky_obce` – scrapes results for a specific municipality
