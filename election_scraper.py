@@ -1,9 +1,3 @@
-"""
-main.py: třetí projekt do Engeto Online Python Akademie
-
-author: Adam Krejčí
-email: adam.krejci.1915@gmail.com
-"""
 
 import requests
 from bs4 import BeautifulSoup
