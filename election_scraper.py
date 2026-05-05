@@ -31,7 +31,7 @@ def get_municipality_links_and_data(main_url):
             })
     return data
 
-def scrapuj_vysledky_obce(url):
+def scrape_results(url):
     response = requests.get(url)
     soup = BeautifulSoup(response.text, "html.parser")
     values = {}
@@ -65,7 +65,7 @@ def clean_value(value):
 
 def main():
     if len(sys.argv) != 3:
-        print("Usage: python main.py <input_url> <output_csv>")
+        print("Usage: python election_scraper.py <input_url> <output_csv>")
         sys.exit(1)
     main_url = sys.argv[1]
     output_csv = sys.argv[2]
@@ -80,7 +80,7 @@ def main():
         url = item["url"]
         code = item["code"]
         name = item["name"]
-        values, party_results = scrapuj_vysledky_obce(url)
+        values, party_results = scrape_results(url)
         row = {
             "code": code,
             "name": name
