@@ -28,7 +28,7 @@ python main.py <INPUT_URL> <OUTPUT_FILE.csv>
 ### Example:
 
 ```bash
-python main.py "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=1&xnumnuts=1100" vysledky_praha.csv
+python main.py "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=1&xnumnuts=1100" results_prague.csv
 ```
 
 ## Output
@@ -55,7 +55,7 @@ The resulting CSV file contains the following information for each municipality:
 
 ```bash
 Downloading data from https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=1&xnumnuts=1100
-Saving data to vysledky_praha.csv
+Saving data to results_prague.csv
 ```
 
 ## Example of data output
